@@ -9,5 +9,10 @@ class Settings(BaseSettings):
     environment: str = "development"
     api_v1_prefix: str = "/api/v1"
 
+    database_url: str = (
+        "postgresql+asyncpg://interview_platform:interview_platform"
+        "@localhost:5432/interview_platform"
+    )
+
 
 settings = Settings()
